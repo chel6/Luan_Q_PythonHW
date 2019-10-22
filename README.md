@@ -1,4 +1,4 @@
-# ROCK Paper Scissors in Python!
+# Rock Paper Scissors in Python!
 
 Pick your weapon and play against the computer - you'll only get a virtual sting if you lose!
 
@@ -15,4 +15,4 @@ Choose your weapon wisely!
 
 The computer chooses first; just follow the prompts.
 
-Built with Python3.
+Built with Python3
