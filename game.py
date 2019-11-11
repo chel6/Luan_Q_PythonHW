@@ -12,11 +12,14 @@ player = False
 
 while player is False:
 	# set player to True
+<<<<<<< HEAD
 	
 	print("************************************\n\n")
 	print("Choose your weapon!\n\n")
 	print("************************************\n\n")
 	
+=======
+>>>>>>> 1ecf08308fcbad660f479d3ab7ffea340c331565
 	player = input("choose rock, paper or scissors\n")
 
 	print("computer chose", computer, "\n")
@@ -26,6 +29,7 @@ while player is False:
 		exit()
 	elif computer == player:
 		print("tie! no one wins, play again")
+<<<<<<< HEAD
 	
 	elif player.lower() == "rock":
 		if computer == "paper":
@@ -47,6 +51,8 @@ while player is False:
 
 	else:
 		print("That's not a valid choice, try again")
+=======
+>>>>>>> 1ecf08308fcbad660f479d3ab7ffea340c331565
 
 
 	# need to check all of our conditions ager checking for a tie
