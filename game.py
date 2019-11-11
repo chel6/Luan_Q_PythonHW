@@ -16,6 +16,7 @@ player = False
 
 while player is False:
 	# set player to True
+<<<<<<< HEAD
 	
 	print("************************************\n\n")
 	print("Computer lives:", computer_lives,"/5","\n")
@@ -23,6 +24,8 @@ while player is False:
 	print("Choose your weapon!\n\n")
 	print("************************************\n\n")
 	
+=======
+>>>>>>> 1ecf08308fcbad660f479d3ab7ffea340c331565
 	player = input("choose rock, paper or scissors\n")
 	player = player.lower()
 
@@ -33,6 +36,7 @@ while player is False:
 		exit()
 	elif computer == player:
 		print("tie! no one wins, play again")
+<<<<<<< HEAD
 	
 	elif player.lower() == "rock":
 		if computer == "paper":
@@ -56,6 +60,8 @@ while player is False:
 
 	else:
 		print("That's not a valid choice, try again")
+=======
+>>>>>>> 1ecf08308fcbad660f479d3ab7ffea340c331565
 
 	# handle all lives lost for player or AI
 	if player_lives is 0:
