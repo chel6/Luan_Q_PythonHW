@@ -59,34 +59,37 @@ while player is False:
 
 	# handle all lives lost for player or AI
 	if player_lives is 0:
-		print("Out of lives! You suck at this game. Would you like to play again?\n")
-		choice = input("Y / N")
-		print(choice)
+		winlose.winorlose("lost")
+		# print("Out of lives! You suck at this game. Would you like to play again?\n")
+		# choice = input("Y / N")
+		# print(choice)
 
-		if (choice is "N") or(choice is "n"):
-			print("You chose to quit.")
-			exit()
-		elif (choice is "Y") or (choice is "y"):
-			#reset the game so that we can start all over again
-			player_lives = 5
-			computer_lives = 5
-			player = False
-			computer = choices[randint(0,2)]
+		# if (choice is "N") or(choice is "n"):
+			# print("You chose to quit.")
+			# exit()
+		# elif (choice is "Y") or (choice is "y"):
+			# reset the game so that we can start all over again
+			# player_lives = 5
+			# computer_lives = 5
+			# player = False
+			# computer = choices[randint(0,2)]
 
-	if computer_lives is 0:
-		print("Cumputer is out of lives! You rock at this game. Would you like to play again?\n")
-		choice = input("Y / N")
-		print(choice)
+	elif computer_lives is 0:
+		winlose.winorlose("won")
+		# print("Cumputer is out of lives! You rock at this game. Would you like to play again?\n")
+		# choice = input("Y / N")
+		# print(choice)
 
-		if (choice is "N") or(choice is "n"):
-			print("You chose to quit.")
-			exit()
-		elif (choice is "Y") or (choice is "y"):
-			#reset the game so that we can start all over again
-			player_lives = 5
-			computer_lives = 5
-			player = False
-			computer = choices[randint(0,2)]
+		# if (choice is "N") or(choice is "n"):
+			# print("You chose to quit.")
+			# exit()
+	else:
+	 # (choice is "Y") or (choice is "y"):
+			# reset the game so that we can start all over again
+			# player_lives = 5
+			# computer_lives = 5
+			# player = False
+			# computer = choices[randint(0,2)]
 
 	# need to check all of our conditions ager checking for a tie
 	player = False
