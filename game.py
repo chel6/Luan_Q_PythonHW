@@ -1,6 +1,6 @@
 # import the random package so that we can generate a random choice
 from random import randint
-from gameFunctions import winlose, gameVars
+from gameFunctions import compare, winlose, gameVars
 
 while gameVars.player is False:
 	# set player to True
@@ -8,17 +8,24 @@ while gameVars.player is False:
 	print("************************************")
 	print("Computer lives:", gameVars.computer_lives,"/",gameVars.total_lives, "\n")
 	print("Player lives:", gameVars.player_lives,"/",gameVars.total_lives, "\n")
-	print("Choose your weapon!\n")
-	print("************************************")
+	print("Choose your weapon!")
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	
-	gameVars.player = input("choose rock, paper or scissors\n")
+	gameVars.player = input("choose rock, paper or scissors:")
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	gameVars.player = gameVars.player.lower()
 
-	print("computer chose", gameVars.computer_lives, "\n")
+	print("computer chose", gameVars.computer, "\n")
 	print("player chose", gameVars.player, "\n")
 
 
 ### this is where function should be
+	if gameVars.player.lower() == "quit":
+		print("Already Quit. ⚆_⚆ ")
+	elif gameVars.player == gameVars.computer:
+		compare.comparechoices("computer", "player")
+	elif gameVars.player != gameVars.computer:
+		compare.comparechoices("computer", "player")
 
 ### compare need put it here
 
