@@ -5,7 +5,7 @@
 
 Prerequisites: All you need is [Python3](https://www.python.org/) to play.
 
-Clon the project, navigate to the correct directory, - cd ditctory name - and run the game.py file in a Python Terminal window for macOS/Linux.
+Clon the project, navigate to the correct directory, - ```cd ditctory name``` - and run the ```game.py``` file in a Python Terminal window for macOS/Linux.
 
 ## Description
 The rules are the same as the classic game:
