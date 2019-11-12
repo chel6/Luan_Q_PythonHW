@@ -7,6 +7,7 @@ Prerequisites: All you need is [Python3](https://www.python.org/) to play.
 
 Clon the project, navigate to the correct directory, - cd ditctory name - and run the game.py file in a Python Terminal window for macOS/Linux.
 
+## Description
 The rules are the same as the classic game:
 
 1. Paper covers Rock
@@ -19,3 +20,8 @@ The computer chooses first; just follow the prompts.
 
 Built with Python3.
 
+## Author
+Qiaoxue Luan
+
+## license
+This project is licensed under [CC BY](https://creativecommons.org/licenses/)
