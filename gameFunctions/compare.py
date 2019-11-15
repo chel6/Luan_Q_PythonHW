@@ -9,31 +9,35 @@ def comparechoices(computer, player):
 		exit()
 
 	elif gameVars.computer == gameVars.player:
-		print("tie! no one wins, play again~ (ง •̀_•́)ง ")
+		print("❥❥❥❥❥❥ No one wins, play again~ ...(ง •̀_•́)ง... ","\n")
 	elif gameVars.player != gameVars.computer:
 
 		if gameVars.player == "rock":
 			if gameVars.computer == "paper":
-				print("You Lose! ...(｡•ˇ‸ˇ•｡) ... ", gameVars.computer, "covers", gameVars.player, "\n")
+				print("❥❥❥❥❥❥ You Lose! ...(｡•ˇ‸ˇ•｡) ... ", gameVars.computer, "covers", gameVars.player, "\n")
 				gameVars.player_lives = gameVars.player_lives - 1
 			else:
-				print("You Win! (੭≧▽≦)੭ ", gameVars.player, "smashes", gameVars.computer, "\n")
+				print("❥❥❥❥❥❥ You Win! ！...ヽ( ^∀^)ﾉ... ", gameVars.player, "smashes", gameVars.computer, "\n")
 				gameVars.computer_lives = gameVars.computer_lives - 1
 
 		elif gameVars.player == "paper":
 			if gameVars.computer == "scissors":
-				print("You Lose! ...(｡•ˇ‸ˇ•｡) ...", gameVars.computer, "cuts", gameVars.player, "\n")
+				print("❥❥❥❥❥❥ You Lose! ...(｡•ˇ‸ˇ•｡) ...", gameVars.computer, "cuts", gameVars.player, "\n")
+				gameVars.player_lives = gameVars.player_lives - 1
 			else:
-				print("You Win! (੭≧▽≦)੭ ", gameVars.player, "smashes", gameVars.computer, "\n")
+				print("❥❥❥❥❥❥ You Win! ！...ヽ( ^∀^)ﾉ... ", gameVars.player, "smashes", gameVars.computer, "\n")
+				gameVars.computer_lives = gameVars.computer_lives - 1
 
 		elif gameVars.player == "scissors":
 			if gameVars.computer == "rock":
-				print("You Lose! ...(｡•ˇ‸ˇ•｡) ... ", gameVars.computer, "smashes", gameVars.player, "\n")
+				print("❥❥❥❥❥❥ You Lose! ...(｡•ˇ‸ˇ•｡) ... ", gameVars.computer, "smashes", gameVars.player, "\n")
+				gameVars.player_lives = gameVars.player_lives - 1
 			else:
-				print("You Win! (੭≧▽≦)੭ ", gameVars.player, "cuts", gameVars.computer, "\n")
+				print("❥❥❥❥❥❥ You Win! ！...ヽ( ^∀^)ﾉ... ", gameVars.player, "cuts", gameVars.computer, "\n")
+				gameVars.computer_lives = gameVars.computer_lives - 1
 
-	else:
-		print("That's not a valid choice, try again (๑>◡<๑) ")
+		else:
+			print("❥❥❥❥❥❥ Are you kidding me? Try again!! ...=͟͟͞͞( •̀д•́)... ", "\n")
 
 
 	gameVars.player = False
