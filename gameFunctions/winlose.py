@@ -13,7 +13,9 @@ def winorlose(status):
 	print(choice)
 
 	if (choice is "N") or (choice is "n"):
-		print("You chose to quit.")
+		print("❥❥❥❥❥❥ Why did you leave me? ...⚆_⚆...")
+		print("❥❥❥❥❥❥ I can't bear you. ...⚆_⚆...")
+		print("************************************")
 		exit()
 
 	elif (choice is "Y") or (choice is "y"):
